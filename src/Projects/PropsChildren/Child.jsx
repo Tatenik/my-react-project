@@ -1,0 +1,17 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+
+
+export default function Child({children, theme}) {
+  return (
+    <div className = {`children-wrapper children-wrapper_${theme}`}   >
+        {children}
+    </div>
+  )
+}
+
+
+Child.propTypes = {
+    theme: PropTypes.oneOf(['light','dark'])
+}

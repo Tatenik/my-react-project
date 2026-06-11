@@ -1,0 +1,32 @@
+:root {
+    --dark--bg--color: linear-gradient(45deg, rgba(30, 65, 13, 0),
+    rgba(0, 0, 0) 76.05%); 
+    --light--bg--color:linear-gradient(130deg, rgba(24, 43, 255, 0.549),
+    rgb(49, 145, 151) 76.05%);
+}
+
+.children-wrapper {
+    padding: 1em;   
+    color: white;
+    margin: 30px;
+    max-width: 500px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+.children-wrapper_light {
+ background-image: var(--light--bg--color) 
+}
+
+.children-wrapper_dark {
+   background-image: var(--dark--bg--color)  
+}
+
+
+.children-wrapper_dark h2 {
+   color: orangered;
+   text-align: center;
+}
+ .children-wrapper p {
+    font-size: 18px;
+    line-height: 1,4;
+ }
